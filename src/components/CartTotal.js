@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import PriceComponent from './formatprice';
 export default function CartColumn({value}) {
     // buat variabel untuk menangkap value sesuai deklarasi func dan var yang ada pada file Context.js
     const {cartSubtotal,cartTax,cartTotal,clearCart} = value;
@@ -14,15 +14,15 @@ export default function CartColumn({value}) {
                         </Link>
                         <h5>
                             <span className="text-title">subtotal</span>
-                            <strong>Rp. {cartSubtotal}</strong>
+                            <strong>: {cartSubtotal}</strong>
                         </h5>
                         <h5>
                             <span className="text-title">tax</span>
-                            <strong>Rp. {cartTax}</strong>
+                            <strong>:{cartTax}</strong>
                         </h5>
                         <h5>
                             <span className="text-title">total</span>
-                            <strong>Rp. {cartTotal}</strong>
+                            <strong>: {cartTotal}</strong>
                         </h5>
                     </div>
                 </div>

@@ -17,13 +17,13 @@ class ProductList extends Component {
                 <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
                         <div className="carousel-item ">
-                            <img src="https://images.unsplash.com/photo-1593642634402-b0eb5e2eebc9?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=869&q=80" className="d-block w-100" alt="poster"/>
+                            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100,s_1920x533/https://cdn.tgdd.vn/2024/04/banner/dandau-2880-800--1--1920x533.png" className="d-block w-100" alt="poster"/>
                         </div>
                         <div className="carousel-item active">
-                            <img src="https://images.unsplash.com/photo-1606293459209-958d5c67c84b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1032&q=80" className="d-block w-100" alt="poster"/>
+                            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100,s_1920x533/https://cdn.tgdd.vn/2024/04/banner/AW-SE-DD-2880-800-1920x533.png" className="d-block w-100" alt="poster"/>
                         </div>
                         <div className="carousel-item">
-                            <img src="https://images.unsplash.com/photo-1610664921890-ebad05086414?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" className="d-block w-100" alt="poster"/>
+                            <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100,s_1920x533/https://cdn.tgdd.vn/2024/04/banner/AirPods-Pro-2-2880-800-1920x533.png" className="d-block w-100" alt="poster"/>
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

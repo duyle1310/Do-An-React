@@ -16,24 +16,78 @@ import SignIn from './components/SignIn';
 import Default from './components/Default';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
+import AboutUs from './aboutus/aboutus';
+import Blogs from './Blogs/Blog';
+import './css/App.css';
+import Test from './test/test';
+import Listproduct from './components/productlist2';
+import Loginform from './Login/login';
+import ContactUs from './contactus/ContactUs';
+import Admin from './admin/admin';
+
 
 function App() {
+  // const userr =  window.localStorage.setItem('user', JSON.stringify(userr))
   return (
+    
     <React.Fragment>
-      {/* Funsgi Tag Navbar untuk menampilkan navbar yang telah diimport diatas */}
+
+      {/* {
+        userr ?
+        <Admin/>
+
+        :
+        <>
       <Navbar/>
-      {/* Fungsi Switch ini untuk memetakan jalur path/Route pada URL yg diakses user 
-      path "/" berarti semuanya jadi semua halaman kalo pengecualian tambahkan "exact"
-      */}
+      
       <Switch>
+
         <Route exact path="/" component={ProductList} />
         <Route path="/details" component={Details} />
         <Route path="/cart" component={Cart} />
         <Route path="/signin" component={SignIn} />
+        <Route path="/blogs" component={Blogs} />
+        <Route path="/aboutus" component={AboutUs} />
+        <Route path="/test" component={Test} />
+        <Route path="/listproduct" component={Listproduct} />
+        <Route path="/login" component={Loginform} />
+        <Route path="/contactUs" component={ContactUs} />
+
+
+
+        
+
         <Route component={Default} />
       </Switch>
       <Modal/>
       <Footer/>
+        </>
+      } */}
+      <Navbar/>
+      
+      <Switch>
+
+        <Route exact path="/" component={ProductList} />
+        <Route path="/details" component={Details} />
+        <Route path="/cart" component={Cart} />
+        <Route path="/signin" component={SignIn} />
+        <Route path="/blogs" component={Blogs} />
+        <Route path="/aboutus" component={AboutUs} />
+        <Route path="/test" component={Test} />
+        <Route path="/listproduct" component={Listproduct} />
+        <Route path="/login" component={Loginform} />
+        <Route path="/contactUs" component={ContactUs} />
+        <Route path="/admin" component={Admin} />
+
+
+
+        
+
+        <Route component={Default} />
+      </Switch>
+      <Modal/>
+      <Footer/>
+      
     </React.Fragment>
   );
 }

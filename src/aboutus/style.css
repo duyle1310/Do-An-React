@@ -1,0 +1,10 @@
+img{
+    max-width: 100%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.social-item{
+    width: 20px;
+}

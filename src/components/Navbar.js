@@ -4,9 +4,11 @@ import logo from '../logo.svg';
 import '../css/App.css';
 import {ButtonContainer} from './Button';
 
+
 class Navbar extends Component {
     render() {
         return (
+
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-sm-5">
                 <div className="container-fluid">
                     <Link to="/">
@@ -20,10 +22,20 @@ class Navbar extends Component {
                             <Link to="/" className="link">
                                 <div className="nav-link active">Products</div>
                             </Link>
-                            <Link to="/signin
-import {Link} from 'react-router-dom';" className="link">
+                            
+                            <Link to="/blogs" className="link">
+                                <div className="nav-link active">Blogs</div>
+                            </Link>
+                            <Link to="/aboutus" className="link">
+                                <div className="nav-link active">About Us</div>
+                            </Link>
+                            <Link to="/contactus" className="link">
+                                <div className="nav-link active">Contact Us</div>
+                            </Link>
+                            <Link to="/login" className="link">
                                 <div className="nav-link">Sign In</div>
                             </Link>
+                            
                         </div>
                         <Link to="/cart">
 {/* menggunakan plugin styled-components

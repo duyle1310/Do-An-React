@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import { ProductConsumer } from '../Context';
 import PropTypes from 'prop-types';
-
+import PriceComponent from './formatprice';
 class Product extends Component {
     render() {
         // this.props.product (PRODUCT) itu berasal dari inisialisai ProductList.js klo di php ROWS dan ROW
@@ -24,7 +24,7 @@ class Product extends Component {
                             <div className="card-body">
                                 <h5 className="card-title title">{title}</h5>
                                 <div className="d-flex justify-content-between">
-                                    <p className="card-text price">Rp. {price}</p>
+                                    <p className="card-text price">Giá bán: <PriceComponent price={price}/></p>
                                     <i className="fas fa-shipping-fast fa-2x text-lightgreen"></i>
                                 </div>
                             </div>
